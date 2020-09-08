@@ -39,31 +39,46 @@ function reduceToTotal(sourceArray, startingPoint=0){
   return currentVal;
 }
 
-function reduceToAllTrue(sourceArray){
-  let newArray = [];
-  sourceArray.forEach(element => {
-    if (!!element === true){
-      newArray.push(element)
-    };
-  });
-  if (newArray.length === sourceArray.length){
-    return true
-  } else {
-    return false
+// function reduceToAllTrue(sourceArray){
+//   let newArray = [];
+//   sourceArray.forEach(element => {
+//     if (!!element === true){
+//       newArray.push(element)
+//     };
+//   });
+//   if (newArray.length === sourceArray.length){
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+
+////learn co
+function reduceToAllTrue(src) {
+  for (let i = 0; i < src.length; i++ ) {
+    if (!src[i]) return false
   }
+  return true
 }
 
-function reduceToAnyTrue(sourceArray){
-  let newArray = [];
-  sourceArray.forEach(element => {
-    if (!!element === false){
-      newArray.push(element)
-    };
-  });
-  if (newArray.length !== sourceArray.length){
-    return true
-  } else {
-    return false
+// function reduceToAnyTrue(sourceArray){
+//   let newArray = [];
+//   sourceArray.forEach(element => {
+//     if (!!element === false){
+//       newArray.push(element)
+//     };
+//   });
+//   if (newArray.length !== sourceArray.length){
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+//////////learn co
+function reduceToAnyTrue(src) {
+  for (let i = 0; i < src.length; i++ ) {
+    if (src[i]) return true
   }
+  return false
 }
 
