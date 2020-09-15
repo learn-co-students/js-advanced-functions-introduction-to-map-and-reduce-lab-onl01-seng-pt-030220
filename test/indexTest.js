@@ -24,7 +24,7 @@ describe('my own map-like methods', function() {
       expect(mapToSquare([1, 2, 3, -9])).to.eql([1, 4, 9, 81])
     })
   })
-  
+
 })
 
 describe('my own reduce-like methods', function() {
@@ -52,7 +52,7 @@ describe('my own reduce-like methods', function() {
 
   describe("reduceToAllTrue returns false when any value is falsy", function() {
     it("reduces correctly", function(){
-      sourceArray = [1, 2, true, "razmatazz", false]
+      sourceArray = [1, 2, false, "razmatazz", true]
       expect(reduceToAllTrue(sourceArray)).to.be.false
     })
   })

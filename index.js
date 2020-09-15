@@ -10,9 +10,19 @@ const reduceToTotal = (sourceArray, startingPoint = 0) => {
   return sourceArray.reduce((acc, n) =>  (acc +n ) , startingPoint)
 }
 const reduceToAllTrue = (sourceArray) => {
-  return sourceArray.reduce((acc, n) => !!n)
+  return sourceArray.reduce((acc, n) => {
+     if (!n) {
+       acc = false
+     }
+     return acc
+  }, true)
 }
 const reduceToAnyTrue = (sourceArray) => {
-  return sourceArray.reduce((acc, n) => !!n)
+  return sourceArray.reduce((acc, n) => {
+    if (n){
+      acc = true
+    }
+    return acc
+  }, false)
 }
 
