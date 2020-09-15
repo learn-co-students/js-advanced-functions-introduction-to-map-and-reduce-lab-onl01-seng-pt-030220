@@ -3,6 +3,7 @@ describe('my own map-like methods', function() {
    it("transforms correctly", function(){
       expect(mapToNegativize([1, 2, 3, -9])).to.eql([-1, -2, -3, 9])
    })
+  })
 
   describe("mapToNoChange returns an array with the original values", function() {
     it("transforms correctly", function(){
@@ -23,7 +24,7 @@ describe('my own map-like methods', function() {
       expect(mapToSquare([1, 2, 3, -9])).to.eql([1, 4, 9, 81])
     })
   })
- })
+  
 })
 
 describe('my own reduce-like methods', function() {
