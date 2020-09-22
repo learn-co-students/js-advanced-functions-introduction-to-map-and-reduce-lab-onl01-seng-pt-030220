@@ -1,6 +1,6 @@
 // Your code here
 //sorry ! , I didn't read the curriculum for this lab,i just used test questions, and i was passing all of them in using map and reduce
-// , after I reviewed this lab, I realized that and did this lab  again using map-like and reduce-like
+// , after I reviewed this lab, I realized that and did this lab  again using map-like and reduce-like ,not using map and reduce function
 function mapToNegativize(sourceArray) {
 
   //  return sourceArray.map(el =>
